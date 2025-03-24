@@ -15,13 +15,27 @@ A browser extension that allows you to play all your liked Instagram videos one 
 ### Chrome/Edge/Brave and other Chromium-based browsers:
 
 1. Download or clone this repository
-2. Open your browser and navigate to the extensions page:
+2. Create icon files (see the "Icon Setup" section below)
+3. Open your browser and navigate to the extensions page:
    - Chrome: `chrome://extensions/`
    - Edge: `edge://extensions/`
    - Brave: `brave://extensions/`
-3. Enable "Developer mode" (usually a toggle in the top-right corner)
-4. Click "Load unpacked" and select the folder containing this extension
-5. The extension should now appear in your browser toolbar
+4. Enable "Developer mode" (usually a toggle in the top-right corner)
+5. Click "Load unpacked" and select the folder containing this extension
+6. The extension should now appear in your browser toolbar
+
+## Icon Setup
+
+Before loading the extension, you need to create icon files:
+
+1. Open the `generate_icons.html` file in your browser
+2. Click the "Generate Icons" button to create simple Instagram-themed icons
+3. Right-click on each canvas and save the images as:
+   - `icon16.png` in the icons folder
+   - `icon48.png` in the icons folder
+   - `icon128.png` in the icons folder
+
+Alternative: You can create your own icons or modify the `manifest.json` file to remove the icon requirement. See `icons/ICON_INSTRUCTIONS.md` for details.
 
 ## How to Use
 
@@ -50,4 +64,5 @@ If the extension isn't working as expected:
 2. Try refreshing the Instagram page
 3. Check if you have any other extensions that might interfere with Instagram
 4. Ensure your browser is up to date
-5. Try disabling and re-enabling the extension 
+5. Try disabling and re-enabling the extension
+6. If you get an error about loading icons, follow the instructions in the "Icon Setup" section 
